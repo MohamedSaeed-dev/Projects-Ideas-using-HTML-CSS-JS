@@ -1,0 +1,97 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(to left bottom, #c37e2d, #c78e29, #c89f26, #c7b026, #c2c22c);
+    background-repeat: no-repeat;
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.tip, .result{
+    width: 100%;
+}
+
+.table{
+    text-align: left;
+    width: inherit;
+    height: 120px;
+}
+
+.row{
+    height: 80px;
+}
+
+.inputs{
+    text-align: center;
+}
+
+.text-inputs{
+    width: 80%;
+    height: 30px;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border-left-width: 10px;
+    border-right-width: 3px;
+    border-radius: 20px 5px 10px 5px;
+}
+
+#number-input{
+    background-color: gainsboro;
+}
+
+#tip-range{
+    width: 68%;
+}
+
+#percent{
+    margin: 0 0 0 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.result{
+    display: none;
+}
+
+.shake{
+    animation: shake 1s ease-in;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(-10px, 0) rotate(-5deg);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(10px, 0) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 80%;
+    }
+}

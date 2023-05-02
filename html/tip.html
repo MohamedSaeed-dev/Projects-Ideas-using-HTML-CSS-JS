@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip</title>
+    <link rel="stylesheet" href="../css/tip.css">
+</head>
+<body>
+    
+
+    <main class="container">
+        <div class="tip">
+            <h1>Tip Calculator</h1>
+            <table class="table">
+                <tr class="row">
+                    <td class="label"><label for="number-input">$: </label></td>
+                    <td class="inputs"><input type="number" class="text-inputs" placeholder="Enter $" id="number-input"></td>
+                </tr>
+                <tr class="row">
+                    <td class="label"><label for="tip-range">Tip: </label></td>
+                    <td class="inputs"><input type="range" id="tip-range" min="0" max="100"><span id="percent"></span></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="result">
+            <h3>Result</h3>
+            <table class="table">
+                <tr class="row">
+                    <td class="label"><label for="tip-amount">Tip amount: </label></td>
+                    <td class="inputs"><input type="text" class="text-inputs" id="tip-amount" readonly disabled></td>
+                </tr>
+                <tr class="row">
+                    <td class="label"><label for="tip-total-bill">Total Bill with Tip: </label></td>
+                    <td class="inputs"><input type="text" class="text-inputs" id="tip-total-bill" readonly disabled></td>
+                </tr>
+            </table>  
+        </div>
+    </main>
+
+    
+    <script src="../js/tip.js"></script>
+    
+</body>
+</html>

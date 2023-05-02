@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.clock{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 25px;
+    width: 25%;
+    margin: 20% auto;
+    font-size: 50px;
+    border: #051937 2px solid;
+    border-left-width: 25px; 
+    border-right-width: 10px;
+    border-radius: 50px 12px 12px 50px;
+}
+
+@media screen and (max-width:768px) {
+    .clock {
+        width: 60%;
+    }
+}

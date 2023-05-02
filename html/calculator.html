@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    
+
+    <main class="calculator">
+        <div class="input">
+            <input type="text" list="equations" name="input" id="input">
+            <datalist name="equations" id="equations">
+
+            </datalist>
+        </div>
+        <section class="buttons">
+            <div class="btn C" onclick="Clear()">C</div>
+            <div class="btn num" onclick="Delete()">DEL</div>
+            <div class="btn op" onclick="Display('/')">÷</div>
+            <div class="btn num" onclick="Display('7')">7</div>
+            <div class="btn num" onclick="Display('8')">8</div>
+            <div class="btn num" onclick="Display('9')">9</div>
+            <div class="btn op" onclick="Display('*')">×</div>
+            <div class="btn num" onclick="Display('4')">4</div>
+            <div class="btn num" onclick="Display('5')">5</div>
+            <div class="btn num" onclick="Display('6')">6</div>
+            <div class="btn op" onclick="Display('-')">-</div>
+            <div class="btn num" onclick="Display('1')">1</div>
+            <div class="btn num" onclick="Display('2')">2</div>
+            <div class="btn num" onclick="Display('3')">3</div>
+            <div class="btn op" onclick="Display('+')">+</div>
+            <div class="btn num" onclick="Display('0')">0</div>
+            <div class="btn num" onclick="Display('.')">.</div>
+            <div class="btn num" onclick="Display('(')">(</div>
+            <div class="btn num" onclick="Display(')')">)</div>
+            <div class="btn equal" onclick="Calculate()">=</div>
+        </section>
+    </main>
+
+
+
+    <script src="../js/calculator.js"></script>
+
+</body>
+</html>

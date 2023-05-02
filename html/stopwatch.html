@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="../css/stopwatch.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h1>Stopwatch</h1>
+        </div>
+        <div class="stopwatch">
+            <div class="watch">
+                <span id="hour">00</span> :
+                <span id="minute">00</span> :
+                <span id="second">00</span> :
+                <span id="ms">00</span>
+            </div>
+            <div class="words">
+                <span id="word"></span>
+            </div>
+            <div class="buttons">
+                <button class="btn" id="startBtn" onclick="start()">Start</button>
+                <button class="btn" id="pauseBtn" onclick="pause()" disabled>Pause</button>
+                <button class="btn" id="stopBtn" onclick="stop()" disabled>Stop</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/stopwatch.js"></script>
+
+</body>
+</html>

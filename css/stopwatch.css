@@ -1,0 +1,49 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: rgb(45, 82, 210);
+    background: linear-gradient(63deg, rgba(45, 82, 210, 1) 1%, rgba(78, 148, 185, 0.871608018207283) 67%);
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 50%;
+    height: 220px;
+    text-align: center;
+    margin: 15% auto;
+    border: outset 3px gainsboro;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#word{
+    font-size: large;
+    text-decoration: underline;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0 0 0;
+}
+
+.btn{
+    width: 25%;
+    height: 40px;
+    font-weight: 900;
+    border-radius: 15px;
+    border: skyblue 2px inset;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.watch{
+    font-size: x-large;
+    font-weight: 600;
+}
